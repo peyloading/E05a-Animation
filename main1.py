@@ -17,10 +17,10 @@ class Ball:
     def __init__(self, position_x, position_y, radius, color):
 
         # Take the parameters of the init function above, and create instance variables out of them.
-        self.position_x = position_x
-        self.position_y = position_y
-        self.radius = radius
-        self.color = color
+        self.position_x = 1     #sets starting x value
+        self.position_y = 1     #sets starting y value
+        self.radius = (10)      #sets radius
+        self.color = arcade.color.BLUE      #sets color
 
     def draw(self):
         """ Draw the balls with the instance variables we have. """
@@ -70,7 +70,7 @@ class MyGame(arcade.Window):
 
 
 def main():
-    window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
+    window = MyGame(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)      #starts the application arcade and sets things such as screen bounds and the title that was previously set
     arcade.run()
 
 
